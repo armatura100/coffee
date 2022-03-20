@@ -1,0 +1,128 @@
+@media (max-width: 810px) {
+    // container-wide
+    .container-wide {
+        padding: 0;
+    }
+
+    // Menu
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 0;
+        height: 100%;
+        padding-top: 80px;
+        background: linear-gradient(to bottom right, #60668a, #d2d6f0);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+
+        transform: translateY(-170%);
+        transition: transform .3s;
+    }
+
+    .menu--active {
+        transform: none;
+    }
+
+    .menu__link {
+        font-size: 14px;
+        text-align: center;
+        padding: 15px 0;
+
+        & + & {
+            border-top: 1px solid rgba(#000, .2);
+        }
+
+        &:hover::after {
+            display: none;
+        }
+    }
+
+    .menu__link--mobile {
+        display: flex;
+        justify-content: center;
+
+        span {
+            margin-right: 0;
+        }
+
+        &:hover {
+            span::after {
+                background: transparent;
+            }
+
+            .user-nav__link-img {
+                transform: none;
+            }
+        }
+    }
+
+    .user-nav {
+        display: none;
+    }
+
+    // Intro
+    .intro {
+        &__inner {
+            padding: 0 10px;
+        }
+
+        &__descr {
+            line-height: 25px;
+        }
+    }
+
+    // Offer
+    .offer {
+        &__inner {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__content {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        &__suptitle {
+            margin-bottom: 5px;
+        }
+    }
+
+    // footer
+    .footer {
+        &__inner {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__logo .logo__img {
+            margin: 0 auto;
+        }
+
+        &__col {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        &__col-title {
+            margin-bottom: 15px;
+        }
+
+        &__mail {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

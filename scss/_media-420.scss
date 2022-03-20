@@ -1,0 +1,38 @@
+@media (max-width: 420px) {
+    // Story
+    .story {
+        &__title {
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+
+    // Offer
+    .offer {
+        &__images {
+            grid-template-columns: repeat(1, auto);
+            justify-items: center;
+        }
+
+        &__title {
+            font-size: 27px;
+            line-height: 35px;
+        }
+    }
+
+    // cta
+    .cta {
+        &__title {
+            font-size: 32px;
+            line-height: 35px;
+        }
+    }
+
+    .form {
+        flex-direction: column;
+
+        &__input {
+            width: 100%;
+        }
+    }
+}

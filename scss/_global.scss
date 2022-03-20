@@ -1,0 +1,76 @@
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #1D1F2E;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container-wide {
+    max-width: 1400px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+}
+
+.title {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 0 auto 100px;
+
+    &::before,
+    &::after {
+        content: '';
+        width: 30px;
+        height: 1px;
+        background: #ECECED;
+        display: inline-block;
+        transform: translateY(-3px);
+    }
+
+    &::before {
+        margin-right: 15px;
+    }
+
+    &::after {
+        margin-left: 15px;
+    }
+}
+
+.item-price {
+    color: rgba(#1D1F2E, .7);
+}
+
+.discount-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &__old {
+        color: rgba(#1D1F2E, .4);
+    }
+
+    &__new {
+        font-size: 19px;
+        line-height: 32px;
+        text-decoration: none;
+        color: #A25F4B;
+    }
+}
+
+.something-open {
+    overflow: hidden;
+}
