@@ -157,8 +157,8 @@
         border: 1px solid transparent;
 
         transition: border-color .2s,
-                    color .2s,
-                    background .2s;
+            color .2s,
+            background .2s;
 
         &:hover {
             border-color: #fff;
@@ -234,7 +234,7 @@
 
     &__item-img {
         transition: box-shadow .2s,
-                    transform .2s;
+            transform .2s;
     }
 
     &__item-img:hover {
@@ -380,7 +380,7 @@
     }
 
     &__text {
-        color:rgba(#1D1F2E, .7);
+        color: rgba(#1D1F2E, .7);
         margin-bottom: 25px;
     }
 
@@ -397,8 +397,8 @@
         background: #1D1F2E;
 
         transition: border-color .2s,
-                    background .2s,
-                    color .2s;
+            background .2s,
+            color .2s;
 
         &:hover {
             border-color: #1D1F2E;
@@ -445,10 +445,14 @@
         font-size: 20px;
         line-height: 32px;
         margin-bottom: 10px;
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 
     &__item-text {
-        color:rgba(#1D1F2E, .7);
+        color: rgba(#1D1F2E, .7);
         margin-bottom: 16px;
     }
 
@@ -508,7 +512,7 @@
         padding: 18px;
         border: 1px solid #2F303E;
         transition: border-color .2s,
-                    box-shadow .2s;
+            box-shadow .2s;
 
         &::placeholder {
             color: #fff;
@@ -533,8 +537,8 @@
         border: 1px solid transparent;
 
         transition: background .2s,
-                    color .2s,
-                    border-color .2s;
+            color .2s,
+            border-color .2s;
 
         &:hover {
             background: transparent;
@@ -609,7 +613,7 @@
             bottom: -15px;
 
             transition: background .2s,
-                        bottom .2s;
+                bottom .2s;
         }
 
         &:hover {
@@ -637,7 +641,7 @@
             bottom: -15px;
 
             transition: background .2s,
-                        bottom .2s;
+                bottom .2s;
         }
 
         &:hover {
